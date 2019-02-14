@@ -7,7 +7,7 @@ To use the action simply add the following lines to your `.github/main.workflow`
 ```
 action "Shopify" {
   uses = "pgrimaud/actions/shopify@master"
-  args = "/"
+  args = "./"
   secrets = [
     "SHOPIFY_PASSWORD",
     "SHOPIFY_STORE_URL",
