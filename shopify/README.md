@@ -5,7 +5,7 @@
 To use the action simply add the following lines to your `.github/main.workflow`
 
 ```
-action "Shopify Theme" {
+action "Shopify" {
   uses = "pgrimaud/shopify/ssh@master"
   args = "/"
   secrets = [
