@@ -2,9 +2,6 @@
 
 set -e
 
-ls -la
-
-echo "$*"
-
-# theme configure --password=$SHOPIFY_PASSWORD --store=$SHOPIFY_STORE_URL --themeid=$SHOPIFY_THEME_ID
-# theme deploy
+cd "$*"
+theme configure --password=$SHOPIFY_PASSWORD --store=$SHOPIFY_STORE_URL --themeid=$SHOPIFY_THEME_ID
+theme deploy
