@@ -32,7 +32,7 @@ Then you'll need to provide some secrets to use the action.
 
 ### Optional Arguments
 
-The optionnal argument you can add to improve theme deployment. Optionnal args are available on [Themekit help](https://shopify.github.io/themekit/configuration/#flags).
+The optionnal argument you can add to improve theme deployment. Optionnal args are available on [Theme Kit help](https://shopify.github.io/themekit/configuration/#flags).
 
 #### Examples
 
