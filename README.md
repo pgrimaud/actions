@@ -4,7 +4,7 @@ This is a collection of GitHub Actions.
 
 More to come.
 
-## [Shopify Theme](shopify)
+## [Shopify Theme](https://github.com/pgrimaud/action-shopify)
 
 This action will deploy your Shopify Theme with Theme Kit.
 
@@ -27,4 +27,4 @@ action "Shopify" {
 
 ## License
 
-[MIT](LICENSE). Please see additional information in each subdirectory.
+[MIT LICENSE](LICENSE). Please see additional information in each modules.
