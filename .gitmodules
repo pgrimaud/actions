@@ -1,0 +1,3 @@
+[submodule "shopify"]
+	path = shopify
+	url = git@github.com:pgrimaud/action-shopify.git
