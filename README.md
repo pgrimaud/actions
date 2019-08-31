@@ -6,24 +6,26 @@ More to come.
 
 ## [Shopify Theme](https://github.com/pgrimaud/action-shopify)
 
-This action will deploy your Shopify Theme with Theme Kit.
+This action will publish your theme on your Shopify store with Theme Kit.
 
 Learn more about [Theme Kit](https://shopify.github.io/themekit/).
 
-![alt text](https://user-images.githubusercontent.com/1866496/52805959-17883a00-3088-11e9-9804-e5f2b2c4ad59.png)
+To use the action simply add the following lines to your workflow .yml file.
 
+```yaml
+...
+  steps:
+      - uses: actions/checkout@v1
+      - name: Shopify
+        uses: pgrimaud/action-shopify@master
+        env:
+          SHOPIFY_PASSWORD: ${{ secrets.SHOPIFY_PASSWORD }}
+          SHOPIFY_STORE_URL: ${{ secrets.SHOPIFY_STORE_URL }}
+          SHOPIFY_THEME_ID: ${{ secrets.SHOPIFY_THEME_ID }}
+          THEME_PATH: ${{ secrets.THEME_PATH }}
 ```
-action "Shopify" {
-  uses = "pgrimaud/actions/shopify@master"
-  args = ""
-  secrets = [
-    "SHOPIFY_PASSWORD",
-    "SHOPIFY_STORE_URL",
-    "SHOPIFY_THEME_ID",
-    "THEME_PATH"
-  ]
-}
-```
+
+More details into action repository.
 
 ## License
 
