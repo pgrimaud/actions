@@ -27,6 +27,26 @@ To use the action simply add the following lines to your workflow .yml file.
 
 More details into action repository.
 
+## [LaMetric Notification](https://github.com/pgrimaud/action-lametric)
+
+This action will publish your theme on your Shopify store with Theme Kit.
+
+To use the action simply add the following lines to your workflow .yml file.
+
+Then create a private LaMetric app. More details into action repository.
+
+```yaml
+...
+  steps:
+      - uses: actions/checkout@v2
+      - uses: pgrimaud/action-lametric@master
+        env:
+            LAMETRIC_ACCESS_TOKEN: ${{ secrets.LAMETRIC_ACCESS_TOKEN }}
+            LAMETRIC_PUSH_URL: ${{ secrets.LAMETRIC_PUSH_URL }}
+            NOTIFICATION_TEXT: ${{ secrets.NOTIFICATION_TEXT }} # optional
+            NOTIFICATION_ICON: ${{ secrets.NOTIFICATION_ICON }} # optional
+```
+
 ## License
 
 [MIT LICENSE](LICENSE). Please see additional information in each modules.

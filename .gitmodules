@@ -1,3 +1,7 @@
 [submodule "shopify"]
 	path = shopify
 	url = git@github.com:pgrimaud/action-shopify.git
+
+[submodule "lametric"]
+	path = lametric
+	url = git@github.com:pgrimaud/action-lametric.git
